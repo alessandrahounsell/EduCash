@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/SCREEN"
+    android:id="@+id/drawer_layout"
+    tools:context=".Settings_Screen">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- I've made some fixes to the register page changing edit texts text to hints -Alex -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="1dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="110dp"
+            android:textSize="45sp"
+            android:fontFamily="@font/moul"
+            android:text="EduCash"
+            android:textColor="@color/blue" />
+
+        <View
+            android:layout_width="415dp"
+            android:layout_height="115dp"
+            android:background="@color/dark_blue" />
+
+        <ImageView
+            android:contentDescription="home"
+            android:layout_width="94dp"
+            android:layout_height="72dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/educashlogo" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/number_input_blue_box"
+            android:layout_marginTop="135dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"/>
+
+        <View
+            android:layout_width="255dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="235dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/rounded_light_blue_box" />
+
+
+
+
+
+        <TextView
+            android:id="@+id/regtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:fontFamily="@font/mplus"
+            android:textSize="45sp"
+            android:textColor="@color/blue"
+            android:layout_marginTop="150dp"
+            android:layout_marginLeft="105dp" />
+
+        <EditText
+            android:id="@+id/edtUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:textSize="15sp"
+            android:textColorHint="@color/dark_blue"
+            android:fontFamily="@font/mplus"
+            android:hint="Enter Username"
+
+            android:layout_marginTop="235dp"
+            android:layout_marginLeft="85dp"
+            android:autofillHints="text" />
+
+        <View
+            android:layout_width="255dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="335dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/rounded_light_blue_box" />
+
+        <EditText
+            android:id="@+id/edtPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:textSize="15sp"
+            android:textColorHint="@color/dark_blue"
+            android:fontFamily="@font/mplus"
+            android:hint="Enter Password"
+            android:layout_marginTop="335dp"
+            android:layout_marginLeft="85dp"
+            android:autofillHints="password" />
+
+
+
+
+        <View
+            android:layout_width="255dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="435dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/rounded_light_blue_box" />
+
+        <EditText
+            android:id="@+id/edtConfirmPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:textSize="15sp"
+            android:textColorHint="@color/dark_blue"
+            android:fontFamily="@font/mplus"
+            android:hint="Re-enter Password"
+            android:layout_marginTop="435dp"
+            android:layout_marginLeft="85dp"
+            android:autofillHints="password" />
+
+        <View
+            android:layout_width="255dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="535dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/rounded_light_blue_box" />
+
+        <EditText
+            android:id="@+id/edtPin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="numberPassword"
+            android:textSize="15sp"
+            android:textColorHint="@color/dark_blue"
+            android:fontFamily="@font/mplus"
+            android:hint="Enter a 6 Digit Pin"
+            android:layout_marginTop="535dp"
+            android:layout_marginLeft="85dp"
+            android:maxLength="6"
+            android:autofillHints="password" />
+
+        <CheckBox
+            android:id="@+id/termsCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mplus"
+            android:textColor="@color/blue"
+            android:text="I agree to the"
+            android:layout_marginTop="600dp"
+            android:layout_marginLeft="40dp"
+            android:checked="false"/>
+
+        <Button
+            android:id="@+id/tandc_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mplus"
+            android:textColor="@color/blue"
+            android:text="@string/Terms"
+            android:background="#00FFFFFF"
+            android:layout_marginTop="601dp"
+            android:layout_marginLeft="160dp" />
+
+        <Button
+            android:id ="@+id/btnSignUp"
+            android:layout_width="300dp"
+            android:layout_height="90dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="665dp"
+            android:layout_centerHorizontal="true"
+            android:background="#00FFFFFF"
+            android:scaleType="centerCrop"
+            android:textSize="45sp"
+            android:fontFamily="@font/mplus"
+            android:text="SUBMIT"
+            android:textColor="@color/pink" />
+
+        <Button
+            android:id="@+id/RegisterButton"
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="145dp"
+            android:layout_marginTop="630dp"
+            android:background="#00FFFFFF"
+            android:fontFamily="@font/mplus"
+            android:scaleType="centerCrop"
+            android:text="Log in"
+            android:textColor="@color/blue"
+            android:textSize="20sp" />
+
+
+    </RelativeLayout>
+
+    <!-- Navigation Drawer -->
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="225dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:background="@color/blue"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/nav_menu"
+        app:itemTextAppearance="@style/NavTextStyle">
+    </com.google.android.material.navigation.NavigationView>
+
+</androidx.drawerlayout.widget.DrawerLayout>

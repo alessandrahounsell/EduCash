@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- rounded_blue_box_with_border.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/blue" /> <!-- Box colour -->
+
+    <corners android:radius="30dp" /> <!-- Rounded corners -->
+
+    <stroke
+        android:width="4dp"
+        android:color="@color/dark_blue" /> <!-- Border colour -->
+</shape>

@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/SCREEN"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="1dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="110dp"
+            android:textSize="45sp"
+            android:fontFamily="@font/moul"
+            android:text="EduCash"
+            android:textColor="@color/blue" />
+
+        <View
+            android:layout_width="415dp"
+            android:layout_height="115dp"
+            android:background="@color/dark_blue" />
+
+        <ImageView
+            android:contentDescription="home"
+            android:layout_width="94dp"
+            android:layout_height="72dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/educashlogo" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/number_input_blue_box"
+            android:layout_marginTop="135dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="1dp"
+            android:layout_marginTop="130dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="45sp"
+            android:fontFamily="@font/mplus"
+            android:text="LOGIN"
+            android:textColor="@color/blue" />
+
+        <!--Basic Pin Fucntionality-->
+
+        <TextView
+            android:id="@+id/pinTextView"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="200dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:text=""
+            android:maxLength="6"
+            android:fontFamily="@font/mplus"
+            android:textColor="@color/pink"
+            android:textSize="40sp"/>
+
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="400dp"
+            android:columnCount="3"
+            android:rowCount="4"
+            android:layout_marginTop="250dp">
+
+            <!-- Button 1 -->
+            <Button
+                android:id="@+id/one"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:text="1"
+                android:layout_gravity="fill_horizontal"
+                android:layout_margin="15dp"
+                style="@style/PinButtonStyle"/>
+
+            <!-- Button 2 -->
+            <Button
+                android:id="@+id/two"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:text="2"
+                android:layout_gravity="fill_horizontal"
+                android:layout_margin="15dp"
+                style="@style/PinButtonStyle"/>
+
+            <!-- Button 3 -->
+            <Button
+                android:id="@+id/three"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:text="3"
+                android:layout_gravity="fill_horizontal"
+                android:layout_margin="15dp"
+                style="@style/PinButtonStyle"/>
+
+            <!-- Button 4 -->
+            <Button
+                android:id="@+id/four"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:text="4"
+                android:layout_gravity="fill_horizontal"
+                android:layout_margin="15dp"
+                style="@style/PinButtonStyle"/>
+
+            <!-- Button 5 -->
+            <Button
+                android:id="@+id/five"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:text="5"
+                android:layout_gravity="fill_horizontal"
+                android:layout_margin="15dp"
+                style="@style/PinButtonStyle"/>
+
+            <!-- Button 6 -->
+            <Button
+                android:id="@+id/six"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:text="6"
+                android:layout_gravity="fill_horizontal"
+                android:layout_margin="15dp"
+                style="@style/PinButtonStyle"/>
+
+            <!-- Button 7 -->
+            <Button
+                android:id="@+id/seven"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:text="7"
+                android:layout_gravity="fill_horizontal"
+                android:layout_margin="15dp"
+                style="@style/PinButtonStyle"/>
+
+            <!-- Button 8 -->
+            <Button
+                android:id="@+id/eight"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:text="8"
+                android:layout_gravity="fill_horizontal"
+                android:layout_margin="15dp"
+                style="@style/PinButtonStyle"/>
+
+            <!-- Button 9 -->
+            <Button
+                android:id="@+id/nine"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:text="9"
+                android:layout_gravity="fill_horizontal"
+                android:layout_margin="15dp"
+                style="@style/PinButtonStyle"/>
+
+            <!-- Button 10 -->
+            <Button
+                android:id="@+id/doubleO"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:text=""
+                android:layout_gravity="fill_horizontal"
+                android:layout_margin="15dp"
+                style="@style/PinButtonStyle"/>
+
+            <!-- Button 11 -->
+            <Button
+                android:id="@+id/zero"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill_horizontal"
+                android:layout_margin="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="15dp"
+                style="@style/PinButtonStyle"
+                android:text="0" />
+
+            <!-- Button 12 -->
+            <Button
+                android:id="@+id/CE"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:text="CE"
+                android:layout_gravity="fill_horizontal"
+                android:layout_margin="15dp"
+                style="@style/PinButtonStyle"/>
+        </GridLayout>
+
+        <Button
+            android:id ="@+id/Login_Button"
+            android:layout_width="300dp"
+            android:layout_height="90dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="630dp"
+            android:scaleType="centerCrop"
+            android:textSize="45sp"
+            android:fontFamily="@font/mplus"
+            android:background="#00FFFFFF"
+            android:text="SUBMIT"
+            android:textColor="@color/pink" />
+
+
+
+    </RelativeLayout>
+
+
+    <!-- Very basic Login/Register Feature
+    <Button
+        android:id="@+id/Login_Button"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="Login"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.65"
+        style = "@style/ButtonStyle"/>
+
+    <Button
+        android:id="@+id/Register_Button"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="Register"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.75"
+        style = "@style/PinButtonStyle"/>
+
+-->
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

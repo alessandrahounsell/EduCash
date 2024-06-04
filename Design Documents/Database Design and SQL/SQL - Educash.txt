@@ -1,0 +1,71 @@
+﻿-- User Profile Table Creation
+
+
+CREATE TABLE UserProfile(
+    UserID INT IDENTITY(1,1) PRIMARY KEY,
+    Username VARCHAR(255),
+    Pword VARCHAR(255),
+    pin INT NOT NULL CHECK (pin >= 0 AND pin <= 999999)
+
+
+)
+
+
+
+
+-- Transactions Table
+CREATE TABLE Transactions(
+    TransactionID INT IDENTITY(1,1) PRIMARY KEY,
+    TransactionAmount MONEY,
+    TransactionDate DATE
+)
+
+
+-- User Transactions Table
+CREATE TABLE UserTransactions(
+    UserID INT,
+    TransactionID INT,
+    FOREIGN KEY (UserID) REFERENCES UserProfile(UserID),
+    FOREIGN KEY (TransactionID) REFERENCES Transactions(TransactionID)
+)
+
+
+-- Account Totals Table
+CREATE TABLE AccountTotals(
+    FinancesID INT IDENTITY (1,1) PRIMARY KEY,
+    UserID INT,
+    FOREIGN KEY (UserID) REFERENCES UserProfile(UserID),
+    CurrentAmount MONEY,
+    Savings MONEY,
+)
+
+
+
+
+
+
+--Editing Database, after looking Link table not necessary, altering Transactions to have UserID as a FK
+
+
+--Deletion of AccountTransactions Link Table
+
+
+DROP TABLE UserTransactions
+
+
+
+
+
+
+
+
+
+
+--Recreated the Transactions Table
+CREATE TABLE Transactions (
+    TransactionID     INT   IDENTITY (1, 1) NOT NULL,
+    UserID            INT,
+    TransactionAmount MONEY DEFAULT 0 NULL,
+    TransactionDate   DATE,
+    FOREIGN KEY (UserID) REFERENCES UserProfile(UserID)
+)

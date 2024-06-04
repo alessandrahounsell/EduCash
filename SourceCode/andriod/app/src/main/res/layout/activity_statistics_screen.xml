@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/SCREEN"
+    android:id="@+id/drawer_layout"
+    tools:context=".Settings_Screen">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="1dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="110dp"
+            android:textSize="37sp"
+            android:fontFamily="@font/moul"
+            android:text="Statistics"
+            android:textColor="@color/blue" />
+
+        <View
+            android:layout_width="415dp"
+            android:layout_height="115dp"
+            android:background="@color/dark_blue" />
+
+        <ImageView
+            android:contentDescription="home"
+            android:layout_width="94dp"
+            android:layout_height="72dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/educashlogo" />
+
+        <Button
+            android:id="@+id/logo_btn"
+            android:layout_width="94dp"
+            android:layout_height="72dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:background="#00FFFFFF"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:contentDescription="menu"
+            android:layout_width="58dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="340dp"
+            android:layout_marginTop="28dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/menua"
+            android:onClick="openDrawer" />
+
+        <Button
+            android:id="@+id/menu_button"
+            android:layout_width="58dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="340dp"
+            android:layout_marginTop="28dp"
+            android:scaleType="centerCrop"
+            android:background="#00FFFFFF"/>
+
+        <View
+            android:id="@+id/view4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="135dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/number_input_blue_box" />
+
+        <TextView
+            android:id="@+id/regtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View"
+            android:fontFamily="@font/mplus"
+            android:textSize="45sp"
+            android:textColor="@color/blue"
+            android:layout_marginTop="150dp"
+            android:layout_marginLeft="45dp" />
+
+        <!-- Termly -->
+        <Button
+            android:id="@+id/termly_btn"
+            android:layout_width="58dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="175dp"
+            android:layout_marginLeft="175dp"
+            android:background="#00FFFFFF"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:layout_width="190dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="175dp"
+            android:layout_marginLeft="175dp"
+            android:gravity="left"
+            android:scaleType="centerCrop"
+            android:textSize="15sp"
+            android:fontFamily="@font/mplus"
+            android:text="Termly"
+            android:textColor="@color/blue" />
+
+        <!-- Monthly -->
+        <Button
+            android:id="@+id/monthly_btn"
+            android:layout_width="72dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="175dp"
+            android:layout_marginLeft="233dp"
+            android:background="#00FFFFFF"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:layout_width="190dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="175dp"
+            android:layout_marginLeft="175dp"
+            android:gravity="center"
+            android:scaleType="centerCrop"
+            android:textSize="15sp"
+            android:fontFamily="@font/mplus"
+            android:text="Monthly"
+            android:textColor="@color/blue" />
+
+        <!-- Weekly -->
+        <Button
+            android:id="@+id/weekly_btn"
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="175dp"
+            android:layout_marginLeft="305dp"
+            android:background="#00FFFFFF"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:layout_width="190dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="175dp"
+            android:layout_marginLeft="175dp"
+            android:gravity="right"
+            android:scaleType="centerCrop"
+            android:textSize="15sp"
+            android:fontFamily="@font/mplus"
+            android:text="Weekly"
+            android:textColor="@color/blue" />
+
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/pieChart"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_alignStart="@+id/view4"
+            android:layout_alignEnd="@+id/view4"
+            android:layout_alignBottom="@+id/view4"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="50dp" />
+
+
+    </RelativeLayout>
+
+    <!-- Navigation Drawer -->
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="225dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:background="@color/blue"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/nav_menu"
+        app:itemTextAppearance="@style/NavTextStyle">
+    </com.google.android.material.navigation.NavigationView>
+
+</androidx.drawerlayout.widget.DrawerLayout>

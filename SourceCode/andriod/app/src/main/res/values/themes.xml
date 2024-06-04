@@ -1,0 +1,20 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Educash" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.Educash" parent="Base.Theme.Educash" />
+
+    <style name = "SCREEN">
+        <item name="android:background">#FFF</item>
+    </style>
+
+    <style name = "TEXT">
+        <item name="android:textColor">@color/dark_blue</item>
+    </style>
+
+
+
+</resources>

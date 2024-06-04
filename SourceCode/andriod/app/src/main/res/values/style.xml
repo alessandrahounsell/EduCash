@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="NavTextStyle">
+        <item name="android:textSize">25sp</item>
+        <item name="android:textColor">@color/pink</item>
+        <item name="android:fontFamily">@font/mplus</item>
+    </style>
+
+    <style name="ButtonStyle">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:fontFamily">@font/mplus</item>
+        <item name="android:background">@drawable/number_input_blue_box</item>
+    </style>
+
+    <style name="PinButtonStyle">
+        <item name="android:textSize">26sp</item>
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:fontFamily">@font/mplus</item>
+        <item name="android:background">"#00FFFFFF"</item>
+    </style>
+
+    <style name="CategoriesViewStyle">
+        <item name="android:textSize">35sp</item>
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:fontFamily">@font/moul</item>
+    </style>
+
+</resources>
